@@ -40,10 +40,10 @@ class BigList {
 
 	methods = {
 		handleTap() {
-			// for (let i = 0; i < n; i++) {
-			// 	this["time" + i] = Date.now();
-			// }
-			this.time1 = Date.now();
+			for (let i = 0; i < n; i++) {
+				this["time" + i] = Date.now();
+			}
+			// this.time1 = Date.now();
 		},
 	};
 }

@@ -1,0 +1,7 @@
+<view class=" cml-base cml-view">
+	<cml-buildin-button text="Test" catchtap="_cmlEventProxy" data-eventtap="{{['handleTap']}}" class=" cml-base cml-button"></cml-buildin-button>
+	<view wx:for="{{list}}" class="item  cml-base cml-view">
+		<text class=" cml-base cml-text">{{item.time}}</text>
+		<text class=" cml-base cml-text">{{item.text}}</text>
+	</view>
+</view>

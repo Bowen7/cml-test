@@ -1,0 +1,16 @@
+{
+  "name": "cml-test",
+  "version": "1.0.0",
+  "description": "A chameleon project",
+  "author": "",
+  "private": true,
+  "scripts": {},
+  "license": "MIT",
+  "dependencies": {
+    "chameleon-api": "1.0.0",
+    "chameleon-runtime": "1.0.0",
+    "chameleon-store": "1.0.0",
+    "chameleon-ui-builtin": "1.0.0",
+    "cml-ui": "1.0.0"
+  }
+}

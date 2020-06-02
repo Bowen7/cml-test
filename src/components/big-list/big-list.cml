@@ -1,0 +1,67 @@
+<template>
+	<view>
+		<button text="Test" c-catch:tap="handleTap"></button>
+		<view c-for="{{list}}" class="item">
+			<text>{{ item.time }}</text>
+			<text>{{ item.text }}</text>
+		</view>
+	</view>
+</template>
+
+<script>
+const dataOptions = {};
+const computedOptions = {};
+const n = 100;
+for (let i = 0; i < n; i++) {
+	dataOptions["time" + i] = Date.now();
+	computedOptions["computedTime" + i] = function () {
+		return this["time" + i];
+	};
+}
+class BigList {
+	data = {
+		...dataOptions,
+	};
+
+	computed = {
+		...computedOptions,
+		list() {
+			const list = [];
+			for (let i = 0; i < n; i++) {
+				const text = Math.random();
+				list.push({
+					time: this["computedTime" + i],
+					text,
+				});
+			}
+			return list;
+		},
+	};
+
+	methods = {
+		handleTap() {
+			// for (let i = 0; i < n; i++) {
+			// 	this["time" + i] = Date.now();
+			// }
+			this.time1 = Date.now();
+		},
+	};
+}
+
+export default new BigList();
+</script>
+<style>
+.item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 10cpx 20cpx;
+}
+</style>
+<script cml-type="json">
+{
+  "base": {
+    "usingComponents": {}
+  }
+}
+</script>

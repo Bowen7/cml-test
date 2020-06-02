@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "big-list": "./../../components/big-list/big-list",
+        "cml-buildin-page": "./../../npm/chameleon-ui-builtin/components/page/page"
+    },
+    "navigationBarTitleText": "index",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#E2E2E2"
+}

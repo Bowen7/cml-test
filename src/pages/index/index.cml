@@ -1,0 +1,32 @@
+<template>
+	<page title="chameleon">
+		<big-list></big-list>
+	</page>
+</template>
+
+<script>
+class Index {}
+
+export default new Index();
+</script>
+<style>
+.scroller-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+</style>
+<script cml-type="json">
+{
+  "base": {
+    "usingComponents": {
+      "big-list": "/components/big-list/big-list"
+    }
+  },
+  "wx": {
+    "navigationBarTitleText": "index",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#E2E2E2"
+  }
+}
+</script>

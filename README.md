@@ -2,7 +2,9 @@
 https://developers.weixin.qq.com/miniprogram/dev/framework/performance/tools.html
 
 安装adb：
+
 brew cask install android-platform-tools
+
 adb devices
 
 ### 测试结果
